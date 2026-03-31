@@ -7,7 +7,7 @@ const App = ({ defaultAction, icon, displayName }) => (
     <div>
         <a className={classes['app-link']} href={defaultAction}>
             <img className={classes['app-icon']} src={icon} />
-            <div className={classes['truncate']} title={displayName}>
+           <div className={`${classes['app-name']} ${classes['truncate']}`} title={displayName}>
                 {displayName}
             </div>
         </a>
